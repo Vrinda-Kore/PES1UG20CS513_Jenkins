@@ -6,6 +6,6 @@ int main(void) {
   cout << "Hello, World\n";
   cout << "Hello, Jenkins\n";
   cout << "I have successfully built and run\n";
-  cout << "This is the update asked in Task 4 ! ";
+  cout << "UPDATE IS MANDATORY FOR TASK4!!! ";
   return 0;
 }
