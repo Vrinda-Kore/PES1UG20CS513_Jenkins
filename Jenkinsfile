@@ -1,25 +1,26 @@
-pipeline {
+pipeline{
   agent any
-  stages {
-    stage('Build') {
-      steps {
-        echo 'Build Stage successful'
+  stages{
+    stage('Build'){
+      steps{
+        echo 'Build Stage Successful'
       }
     }
-    stage('Test') {
-      steps {
+    stage('Test'){
+      steps{
         echo 'Test Stage Successful'
       }
     }
-    stage('Deploy') {
-      steps {
-        scho 'Deployment success!'
+    stage('Deploy'){
+      steps{
+        sh 'mvn edploy'
+        echo 'Deploy Stage Successful'
       }
     }
   }
-  post {
-    failure {
-      echo 'pipeline failed'
+  post{
+    failure{
+      echo 'Pipeline failed'
     }
   }
 }
